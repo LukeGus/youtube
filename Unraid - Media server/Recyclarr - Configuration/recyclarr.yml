@@ -29,9 +29,10 @@ sonarr:
   sonarr:
     base_url: http://100.114.8.69:2600
     api_key: 15421132eec44200a428b6996ffdb0d0
+    delete_old_custom_formats: true
 
     quality_profiles:
-      - name: WEB-1080p
+      - name: 720p-1080p
         qualities:
           - name: Bluray-1080p
           - name: WEB 1080p
@@ -73,9 +74,10 @@ radarr:
   radarr:
     base_url: http://100.114.8.69:2500
     api_key: 309c6433effa4ad5a9669daa7fed287e
+    delete_old_custom_formats: true
 
     quality_profiles:
-      - name: HD Bluray + WEB
+      - name: 720p-1080p
         qualities:
           - name: Bluray-1080p
           - name: WEB 1080p
@@ -89,13 +91,6 @@ radarr:
               - WEBRip-720p
           - name: HDTV-1080p
           - name: HDTV-720p
-          - name: Bluray-480p
-          - name: WEB 480p
-            qualities:
-              - WEBDL-480p
-              - WEBRip-480p
-          - name: DVD
-          - name: SDTV
       
     include:
       # Comment out any of the following includes to disable them
